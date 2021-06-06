@@ -16,7 +16,11 @@ function onOpen() {
 
 function openDialog() {
   var html = HtmlService.createHtmlOutputFromFile('demo')
-      .setSandboxMode(HtmlService.SandboxMode.IFRAME);
+      .setSandboxMode(HtmlService.SandboxMode.IFRAME)
+      .setWidth(810)
+      .setHeight(500);      
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
       .showModalDialog(html, 'P5 js in dialog pop up');
 }
+
+//https://developers.google.com/apps-script/reference/base/ui#showModalDialog(Object,String)
