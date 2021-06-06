@@ -4,8 +4,6 @@ https://github.com/adegard/P5-js-Pop-up-gsheet-GAS-
 @adegard
 */
 
-
-
 // Use this code for Google Docs, Forms, or new Sheets.
 function onOpen() {
   SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
